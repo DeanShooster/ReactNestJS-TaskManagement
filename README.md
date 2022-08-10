@@ -32,6 +32,4 @@ The application is a very basic Task Management similar to ToDo apps as an exper
 
 <h2 align="center">Demo Videos</h2>
 
-
-
-
+https://user-images.githubusercontent.com/92792238/183902390-6bcf55d1-316a-4fb8-ab41-55fbb83b290c.mp4
