@@ -1,0 +1,96 @@
+$main-color: #038367;
+
+.main-page{
+    width: 100%; padding-top: 50px;
+
+    .task-tip-container{
+        margin: auto; padding: 0 7px 7px 7px;
+        width: 50%;
+        display: flex; align-items: center; justify-content:space-between;
+        border-bottom: $main-color 2px solid;
+
+        @media(max-width: 1200px){ width: 80%;}
+        @media(max-width: 800px){ width: 95%;}
+
+        h1{ 
+            margin: 0; 
+            font-size: 2.5rem; font-family:cursive;
+            color: $main-color; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+            @media(max-width: 550px){ font-size: 1.75rem;}
+        }
+
+        a{
+            padding: 15px;
+            display: flex; align-items: center;
+            text-decoration: none; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: $main-color; color: #fff;
+            border-radius: 25px;
+            font-size: 1.3rem;
+
+            @media(max-width: 550px){ font-size: 1rem; padding: 10px;}
+
+            span{ margin: 0 5px -5px 0; }
+
+            &:hover{ background-color: #fff; color:$main-color; outline:$main-color 2px solid;}
+        }
+    }
+
+    .tasks-container{
+        margin: 50px auto; padding: 0 7px 7px 7px;
+        width: 50%; max-width: 700px; font-family: cursive; 
+
+        @media(max-width: 900px){ width: 80%;}
+
+        .task-container{
+            list-style: none;
+            padding: 15px; margin-bottom: 15px;
+            border: 6px double rgba(128, 128, 128, 0.436); border-radius: 5px;
+            box-shadow: 0 0 10px 0 rgb(0 0 0 / 28%); color: $main-color; background-color: #fff;
+
+            .rank_and_date_container{
+                display: flex; justify-content: space-between;
+
+                .rank{
+                    padding: 2px 5px 2px 5px;
+                    border-radius: 35px; border: 1px solid $main-color;
+                    font-size: 1.2rem; font-weight: bold; text-align: center;
+                    background-color: $main-color; color: #fff; 
+                }
+
+                .date{ font-size: 1.15rem;font-weight: bold; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);}
+            }
+
+            h2{
+                margin: 7px 0 7px 0;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); 
+            }
+
+            p{
+                margin: 5px 0 20px 0;
+                font-family: 'Courier New', Courier, monospace; font-size: 1.15rem; font-weight: bold;
+            }
+
+            .task-status_and_delete-container{
+                display: flex; justify-content: space-between;
+
+                select{
+                    padding: .5rem;
+                    border-radius: 7px; 
+                    font-size: 1rem; text-align: center; color: $main-color;
+                    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.596);
+                }
+
+                .delete{
+                    color:$main-color; font-size: 2rem;
+                    &:hover{ cursor: pointer; color: darkorange; }
+                }
+            }
+        }
+
+        .status-message{
+            text-align: center; font-family: cursive;
+            color: rgb(62, 134, 197);
+            margin: 10px 0 0 0;
+        }
+    }
+}
